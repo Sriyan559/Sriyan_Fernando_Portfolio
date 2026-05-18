@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sriyan Fernando | Trainee Software Engineer & Full-Stack Developer Portfolio</title>
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Professional portfolio of Sriyan Fernando, Trainee Software Engineer & Full-Stack Developer. Undergraduate at SLIIT, experienced in Java, Spring Boot, C#, ASP.NET MVC, React, and MS SQL Server.">
+    <meta name="keywords" content="Sriyan Fernando, Sriyan, Software Engineer, Full-Stack Developer, SLIIT, Portfolio, Java, C#, React, Sri Lanka">
+    <meta name="author" content="Sriyan Fernando">
+    
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="Sriyan Fernando | Trainee Software Engineer Portfolio">
+    <meta property="og:description" content="Explore my projects, tech stack, and experience in full-stack web and mobile development.">
+    <meta property="og:image" content="assets/profile.jpg">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts: Space Grotesk & Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Style Stylesheet -->
+    <link rel="stylesheet" href="style.css?v=2.0.1">
+</head>
+<body class="dark-theme">
+
+    <!-- Custom Cursor Glow -->
+    <div class="custom-cursor-outline" id="custom-cursor-outline"></div>
+    <div class="custom-cursor-dot" id="custom-cursor-dot"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scroll-bar"></div>
+    </div>
+
+    <!-- Interactive Background Canvas Particles -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Page Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="loader-circle"></div>
+            <div class="loader-text">
+                <span class="loader-word">BOOTING</span>
+                <span class="loader-dots">...</span>
+            </div>
+            <div class="loader-progress-container">
+                <div class="loader-progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- STICKY NAVBAR -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                Sriyan <span class="logo-accent">Fernando</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#hero" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="#about" class="nav-link"><i class="fa-solid fa-user"></i> About</a></li>
+                    <li><a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a></li>
+                    <li><a href="#projects" class="nav-link"><i class="fa-solid fa-cubes"></i> Projects</a></li>
+                    <li><a href="#education" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+                    <li><a href="#strengths" class="nav-link"><i class="fa-solid fa-gem"></i> Strengths</a></li>
+                    <li><a href="#contact" class="nav-link"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle light and dark theme">
+                    <i class="fa-solid fa-moon moon-icon"></i>
+                    <i class="fa-solid fa-sun sun-icon"></i>
+                </button>
+                
+                <!-- Mobile Nav Toggle Hamburger -->
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN PORTFOLIO SECTIONS -->
+    <main>
+        
+        <!-- 1. HERO SECTION -->
+        <section id="hero" class="hero-section">
+            <div class="section-container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge reveal-item">
+                        <span class="pulse-dot"></span> Open for Trainee Software Engineer Opportunities
+                    </div>
+                    <h1 class="hero-greeting reveal-item">Hi, I'm</h1>
+                    <h2 class="hero-name reveal-item">Sriyan Fernando</h2>
+                    <h3 class="hero-title reveal-item">
+                        I'm a <span class="typing-text" id="typewriter"></span>
+                    </h3>
+                    <p class="hero-description reveal-item">
+                        Trainee Software Engineer & Full-Stack Developer. Dedicated to crafting highly-scalable, beautifully-engineered software applications and robust system integrations.
+                    </p>
+                    <div class="hero-cta reveal-item">
+                        <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-eye"></i> View Projects</a>
+                        <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-envelope"></i> Contact Me</a>
+                        <a href="#" class="btn btn-text" id="cv-download"><i class="fa-solid fa-download"></i> Download CV</a>
+                    </div>
+                    
+                    <!-- Primary Social Buttons Side-by-Side in Hero -->
+                    <div class="hero-social-buttons reveal-item">
+                        <a href="https://github.com/Sriyan559" target="_blank" rel="noopener" class="btn btn-social-hero github-hero-btn"><i class="fa-brands fa-github"></i> GitHub Profile</a>
+                        <a href="https://www.linkedin.com/in/sriyanchanuka/" target="_blank" rel="noopener" class="btn btn-social-hero linkedin-hero-btn"><i class="fa-brands fa-linkedin-in"></i> LinkedIn Profile</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal-item">
+                    <div class="avatar-glow-ring">
+                        <div class="avatar-inner-ring">
+                            <img src="assets/profile.jpg" alt="Sriyan Fernando Profile Photo" class="avatar-image">
+                        </div>
+                        <!-- Floating Tech Icons Around Avatar -->
+                        <div class="floating-tech-icon tech-react" title="React"><i class="fa-brands fa-react"></i></div>
+                        <div class="floating-tech-icon tech-java" title="Java"><i class="fa-brands fa-java"></i></div>
+                        <div class="floating-tech-icon tech-node" title="Node.js"><i class="fa-brands fa-node-js"></i></div>
+                        <div class="floating-tech-icon tech-csharp" title="C#"><i class="fa-solid fa-hashtag"></i></div>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#about" class="scroll-down" aria-label="Scroll to About Section">
+                <span class="mouse-icon">
+                    <span class="wheel"></span>
+                </span>
+                <span class="arrow-down"><i class="fa-solid fa-angle-down"></i></span>
+            </a>
+        </section>
+
+        <!-- 2. ABOUT ME SECTION -->
+        <section id="about" class="about-section section-padding">
+            <div class="section-container">
+                <div class="section-header reveal-item">
+                    <span class="sub-title">01. Summary</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text-container reveal-item" style="grid-column: 1 / -1;">
+                        <h3 class="about-heading" style="text-align: center; margin-bottom: 25px;">Engineering digital solutions with code that counts.</h3>
+                        <p class="about-paragraph" style="font-size: 1.1rem; line-height: 1.8; text-align: justify; text-justify: inter-word;">
+                            Motivated Software Engineering undergraduate at the <strong>Sri Lanka Institute of Information Technology (SLIIT)</strong> with a strong passion for building scalable and efficient software solutions. Experienced in full-stack and backend development using Java, C#, .NET, JavaScript, and MS SQL. Adept at applying Object-Oriented Programming (OOP), MVC architecture, and RESTful API design to solve real-world problems. Eager to contribute to a dynamic development team as a Trainee Software Engineer while continuously learning and delivering high-quality software.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Summary statistics indicators -->
+                <div class="about-stats-container" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 50px; width: 100%;">
+                    <!-- Stats Card 1 -->
+                    <div class="stat-card glass-card reveal-item">
+                        <div class="stat-icon-wrapper">
+                            <i class="fa-solid fa-cubes-stacked stat-icon"></i>
+                        </div>
+                        <div>
+                            <div class="stat-number" data-target="15">0</div>
+                            <div class="stat-label">Projects Developed</div>
+                        </div>
+                    </div>
+
+                    <!-- Stats Card 2 -->
+                    <div class="stat-card glass-card reveal-item">
+                        <div class="stat-icon-wrapper">
+                            <i class="fa-solid fa-code-fork stat-icon"></i>
+                        </div>
+                        <div>
+                            <div class="stat-number" data-target="18">0</div>
+                            <div class="stat-label">Technologies Mastered</div>
+                        </div>
+                    </div>
+
+                    <!-- Stats Card 3 -->
+                    <div class="stat-card glass-card reveal-item">
+                        <div class="stat-icon-wrapper">
+                            <i class="fa-solid fa-graduation-cap stat-icon"></i>
+                        </div>
+                        <div>
+                            <div class="stat-number" data-target="3">0</div>
+                            <div class="stat-label">Years of Engineering Study</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. SKILLS SECTION -->
+        <section id="skills" class="skills-section section-padding section-bg">
+            <div class="section-container">
+                <div class="section-header reveal-item">
+                    <span class="sub-title">02. Expertise</span>
+                    <h2 class="section-title">My Skills & Toolkit</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="skills-grid">
+                    
+                    <!-- Skill Group: Frontend -->
+                    <div class="skills-category-card glass-card reveal-item">
+                        <div class="category-header">
+                            <i class="fa-solid fa-desktop category-icon"></i>
+                            <h3 class="category-title">Frontend</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-html5 skill-icon html-color"></i> HTML5</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 0%" data-width="95%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-css3-alt skill-icon css-color"></i> CSS3</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 0%" data-width="90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-js skill-icon js-color"></i> JavaScript</span>
+                                    <span class="skill-percentage">88%</span>
+                                </div>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 0%" data-width="88%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-react skill-icon react-color"></i> React</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 0%" data-width="85%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Group: Backend -->
+                    <div class="skills-category-card glass-card reveal-item">
+                        <div class="category-header">
+                            <i class="fa-solid fa-server category-icon"></i>
+                            <h3 class="category-title">Backend</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-java skill-icon java-color"></i> Java</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 0%" data-width="90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-leaf skill-icon spring-color"></i> Spring Boot</span>
+                                    <span class="skill-percentage">82%</span>
+                                </div>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 0%" data-width="82%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-node-js skill-icon node-color"></i> Node.js / Express.js</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 0%" data-width="85%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-globe skill-icon csharp-color"></i> ASP.NET MVC</span>
+                                    <span class="skill-percentage">84%</span>
+                                </div>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 0%" data-width="84%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-hashtag skill-icon csharp-color"></i> C#</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 0%" data-width="85%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Group: Database -->
+                    <div class="skills-category-card glass-card reveal-item">
+                        <div class="category-header">
+                            <i class="fa-solid fa-database category-icon"></i>
+                            <h3 class="category-title">Database</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-leaf skill-icon mongo-color"></i> MongoDB</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 0%" data-width="80%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-database skill-icon mysql-color"></i> MySQL</span>
+                                    <span class="skill-percentage">88%</span>
+                                </div>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 0%" data-width="88%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-database skill-icon mssql-color"></i> MS SQL Server</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 0%" data-width="85%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Group: Programming Concepts -->
+                    <div class="skills-category-card glass-card reveal-item">
+                        <div class="category-header">
+                            <i class="fa-solid fa-brain category-icon"></i>
+                            <h3 class="category-title">Programming Concepts</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-cubes skill-icon vscode-color"></i> OOP (Object Oriented Programming)</span>
+                                    <span class="skill-percentage">92%</span>
+                                </div>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 0%" data-width="92%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-sitemap skill-icon tailwind-color"></i> MVC Architecture</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 0%" data-width="90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-cloud-arrow-down skill-icon react-color"></i> RESTful APIs</span>
+                                    <span class="skill-percentage">88%</span>
+                                </div>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 0%" data-width="88%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-gears skill-icon spring-color"></i> CRUD Operations</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 0%" data-width="95%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Group: Tools -->
+                    <div class="skills-category-card glass-card reveal-item" style="grid-column: span 2;">
+                        <div class="category-header">
+                            <i class="fa-solid fa-screwdriver-wrench category-icon"></i>
+                            <h3 class="category-title">Tools & Ecosystem</h3>
+                        </div>
+                        <div class="skills-list" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-git-alt skill-icon git-color"></i> Git</span>
+                                    <span class="skill-percentage">92%</span>
+                                </div>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 0%" data-width="92%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-github skill-icon github-color"></i> GitHub</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 0%" data-width="90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-code skill-icon vscode-color"></i> VS Code</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 0%" data-width="95%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-laptop-code skill-icon intellij-color"></i> IntelliJ IDEA</span>
+                                    <span class="skill-percentage">88%</span>
+                                </div>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 0%" data-width="88%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. PROJECTS SECTION -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="section-container">
+                <div class="section-header reveal-item">
+                    <span class="sub-title">03. Showcase</span>
+                    <h2 class="section-title">My Projects</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="projects-grid" style="grid-template-columns: repeat(2, 1fr); gap: 40px;">
+                    
+                    <!-- Project Card 1 -->
+                    <div class="project-card glass-card reveal-item">
+                        <div class="project-image-wrapper">
+                            <img src="assets/project1.png" alt="Online Tuition Class Management System" class="project-image">
+                            <div class="project-overlay">
+                                <div class="overlay-links">
+                                    <a href="#" class="overlay-link project-demo-btn" data-project="tuition" title="Project Details"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    <a href="https://github.com/Sriyan559" target="_blank" rel="noopener" class="overlay-link" title="Source Code"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">Full-Stack Web App</span>
+                            </div>
+                            <h3 class="project-title">Online Tuition Class Management System</h3>
+                            <p class="project-description">
+                                Developed a full-stack web application to manage online tuition classes, including student registration, class scheduling, and payment tracking.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Java Spring Boot</span>
+                                <span class="tech-tag">MS SQL Server</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn btn-primary btn-sm project-demo-btn" data-project="tuition"><i class="fa-solid fa-circle-info"></i> Project Details</button>
+                                <a href="https://github.com/Sriyan559" target="_blank" rel="noopener" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="project-card glass-card reveal-item">
+                        <div class="project-image-wrapper">
+                            <img src="assets/project2.png" alt="Online Examination Management System" class="project-image">
+                            <div class="project-overlay">
+                                <div class="overlay-links">
+                                    <a href="#" class="overlay-link project-demo-btn" data-project="examination" title="Project Details"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    <a href="https://github.com/Sriyan559" target="_blank" rel="noopener" class="overlay-link" title="Source Code"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">Backend System Logic</span>
+                            </div>
+                            <h3 class="project-title">Online Examination Management System</h3>
+                            <p class="project-description">
+                                Developed backend logic for exam management and result processing with responsive interfaces for students and administrators.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">MS SQL</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn btn-primary btn-sm project-demo-btn" data-project="examination"><i class="fa-solid fa-circle-info"></i> Project Details</button>
+                                <a href="https://github.com/Sriyan559" target="_blank" rel="noopener" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div class="project-card glass-card reveal-item">
+                        <div class="project-image-wrapper">
+                            <img src="assets/project3.png" alt="Student Management System" class="project-image">
+                            <div class="project-overlay">
+                                <div class="overlay-links">
+                                    <a href="#" class="overlay-link project-demo-btn" data-project="student" title="Project Details"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    <a href="https://github.com/Sriyan559" target="_blank" rel="noopener" class="overlay-link" title="Source Code"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">Full-Stack Enterprise CRUD</span>
+                            </div>
+                            <h3 class="project-title">Student Management System</h3>
+                            <p class="project-description">
+                                Developed a CRUD-based student management system using ASP.NET MVC with role-based access control and normalized database design.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">C#</span>
+                                <span class="tech-tag">ASP.NET MVC</span>
+                                <span class="tech-tag">MS SQL</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn btn-primary btn-sm project-demo-btn" data-project="student"><i class="fa-solid fa-circle-info"></i> Project Details</button>
+                                <a href="https://github.com/Sriyan559" target="_blank" rel="noopener" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 4 -->
+                    <div class="project-card glass-card reveal-item">
+                        <div class="project-image-wrapper">
+                            <img src="assets/project4.png" alt="QueuePro – Online Appointment Management System" class="project-image">
+                            <div class="project-overlay">
+                                <div class="overlay-links">
+                                    <a href="#" class="overlay-link project-demo-btn" data-project="queuepro" title="Project Details"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    <a href="https://github.com/Sriyan559" target="_blank" rel="noopener" class="overlay-link" title="Source Code"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">Full-Stack Mobile App</span>
+                            </div>
+                            <h3 class="project-title">QueuePro – Online Appointment Management System</h3>
+                            <p class="project-description">
+                                Developed a mobile application for managing appointments and reducing queue wait times with booking, scheduling, and user management features.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Express.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn btn-primary btn-sm project-demo-btn" data-project="queuepro"><i class="fa-solid fa-circle-info"></i> Project Details</button>
+                                <a href="https://github.com/Sriyan559" target="_blank" rel="noopener" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. EDUCATION TIMELINE SECTION -->
+        <section id="education" class="timeline-section section-padding section-bg">
+            <div class="section-container">
+                <div class="section-header reveal-item">
+                    <span class="sub-title">04. Timeline</span>
+                    <h2 class="section-title">My Education</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+                    
+                    <!-- Education Item 1 -->
+                    <div class="timeline-item reveal-item">
+                        <div class="timeline-dot"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">Undergraduate (3rd Year)</span>
+                            <h3 class="timeline-title">BSc (Hons) Information Technology (Software Engineering)</h3>
+                            <h4 class="timeline-location">Sri Lanka Institute of Information Technology (SLIIT)</h4>
+                            <p class="timeline-text">
+                                Developing advanced skills in Object-Oriented Programming (OOP), Model-View-Controller (MVC) architecture pattern designs, database administration, RESTful API design protocols, and full-stack software development methodologies.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Education Item 2 -->
+                    <div class="timeline-item reveal-item">
+                        <div class="timeline-dot"><i class="fa-solid fa-award"></i></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">Certified Program</span>
+                            <h3 class="timeline-title">Certificate in English and IT</h3>
+                            <h4 class="timeline-location">The Open University of Sri Lanka (OUSL)</h4>
+                            <p class="timeline-text">
+                                Solidified core competencies in structural programming foundations, software utilities, database query concepts, and advanced professional technical English communications.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. STRENGTHS SECTION (New!) -->
+        <section id="strengths" class="strengths-section section-padding">
+            <div class="section-container">
+                <div class="section-header reveal-item">
+                    <span class="sub-title">05. Attributes</span>
+                    <h2 class="section-title">My Strengths</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="strengths-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;">
+                    
+                    <!-- Strength Card 1 -->
+                    <div class="strength-card glass-card reveal-item" style="padding: 30px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 15px;">
+                        <div class="strength-icon-wrapper" style="width: 60px; height: 60px; border-radius: 50%; background: rgba(59, 130, 246, 0.08); border: 1px solid rgba(59, 130, 246, 0.2); display: flex; justify-content: center; align-items: center; font-size: 1.5rem; color: var(--color-primary); box-shadow: var(--glow-primary);">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <h3 class="strength-title" style="font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; font-weight: 700; color: var(--text-primary);">Teamwork & Collaboration</h3>
+                        <p class="strength-desc" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">
+                            Thrives inside integrated software development teams, leveraging active version control (Git) and Agile communication loops to build cohesive software ecosystems.
+                        </p>
+                    </div>
+
+                    <!-- Strength Card 2 -->
+                    <div class="strength-card glass-card reveal-item" style="padding: 30px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 15px;">
+                        <div class="strength-icon-wrapper" style="width: 60px; height: 60px; border-radius: 50%; background: rgba(139, 92, 246, 0.08); border: 1px solid rgba(139, 92, 246, 0.2); display: flex; justify-content: center; align-items: center; font-size: 1.5rem; color: var(--color-secondary); box-shadow: var(--glow-secondary);">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <h3 class="strength-title" style="font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; font-weight: 700; color: var(--text-primary);">Problem-Solving</h3>
+                        <p class="strength-desc" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">
+                            Adept at analyzing complex algorithmic structures, applying efficient OOP design patterns, and debugging logical bottlenecks to achieve optimal performance.
+                        </p>
+                    </div>
+
+                    <!-- Strength Card 3 -->
+                    <div class="strength-card glass-card reveal-item" style="padding: 30px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 15px;">
+                        <div class="strength-icon-wrapper" style="width: 60px; height: 60px; border-radius: 50%; background: rgba(6, 182, 212, 0.08); border: 1px solid rgba(6, 182, 212, 0.2); display: flex; justify-content: center; align-items: center; font-size: 1.5rem; color: var(--color-accent); box-shadow: var(--glow-accent);">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <h3 class="strength-title" style="font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; font-weight: 700; color: var(--text-primary);">Attention to Detail</h3>
+                        <p class="strength-desc" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">
+                            Dedicated to delivering normalized relational database schemas, standardizing API routing logic, and maintaining clean, reusable, and documentable source code.
+                        </p>
+                    </div>
+
+                    <!-- Strength Card 4 -->
+                    <div class="strength-card glass-card reveal-item" style="padding: 30px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 15px;">
+                        <div class="strength-icon-wrapper" style="width: 60px; height: 60px; border-radius: 50%; background: rgba(59, 130, 246, 0.08); border: 1px solid rgba(59, 130, 246, 0.2); display: flex; justify-content: center; align-items: center; font-size: 1.5rem; color: var(--color-primary); box-shadow: var(--glow-primary);">
+                            <i class="fa-solid fa-clock-rotate-left"></i>
+                        </div>
+                        <h3 class="strength-title" style="font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; font-weight: 700; color: var(--text-primary);">Responsibility & Time</h3>
+                        <p class="strength-desc" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">
+                            Demonstrates outstanding task-ownership, delivering academic structures, complex systems projects, and team components consistently before deadline targets.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. CONTACT SECTION -->
+        <section id="contact" class="contact-section section-padding section-bg">
+            <div class="section-container">
+                <div class="section-header reveal-item">
+                    <span class="sub-title">06. Connection</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="contact-grid">
+                    
+                    <!-- Contact Information Column -->
+                    <div class="contact-info-container reveal-item">
+                        <h3 class="contact-subtitle">Let's discuss a Trainee Software Engineer vacancy!</h3>
+                        <p class="contact-intro">
+                            My inbox is always open. Whether you have an exciting trainee software engineering position, a project proposal, or simply want to connect, feel free to reach out to me directly!
+                        </p>
+
+                        <div class="contact-details">
+                            <!-- Email -->
+                            <a href="mailto:sriyanchanuka559@gmail.com" class="contact-detail-card glass-card">
+                                <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="detail-content">
+                                    <span class="detail-label">Email Me</span>
+                                    <span class="detail-value" style="font-size: 0.85rem;">sriyanchanuka559@gmail.com</span>
+                                </div>
+                            </a>
+
+                            <!-- WhatsApp/Phone -->
+                            <a href="https://wa.me/94742577460" target="_blank" rel="noopener" class="contact-detail-card glass-card">
+                                <div class="detail-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                                <div class="detail-content">
+                                    <span class="detail-label">WhatsApp & Call</span>
+                                    <span class="detail-value">+94 74 257 7460</span>
+                                </div>
+                            </a>
+
+                            <!-- Location -->
+                            <div class="contact-detail-card glass-card">
+                                <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="detail-content">
+                                    <span class="detail-label">Location</span>
+                                    <span class="detail-value">Colombo, Sri Lanka</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Direct Action Buttons in Contact Area -->
+                        <div class="contact-action-links" style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 30px;">
+                            <a href="https://github.com/Sriyan559" target="_blank" rel="noopener" class="btn btn-outline btn-block"><i class="fa-brands fa-github"></i> Visit my GitHub</a>
+                            <a href="https://www.linkedin.com/in/sriyanchanuka/" target="_blank" rel="noopener" class="btn btn-outline btn-block"><i class="fa-brands fa-linkedin-in"></i> Connect on LinkedIn</a>
+                        </div>
+
+                        <!-- Social Buttons -->
+                        <div class="social-links-container">
+                            <a href="https://github.com/Sriyan559" target="_blank" rel="noopener" class="social-circle-link" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/sriyanchanuka/" target="_blank" rel="noopener" class="social-circle-link" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="mailto:sriyanchanuka559@gmail.com" class="social-circle-link" aria-label="Send Email"><i class="fa-solid fa-envelope"></i></a>
+                            <a href="https://wa.me/94742577460" target="_blank" rel="noopener" class="social-circle-link" aria-label="WhatsApp Chat"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Column -->
+                    <div class="contact-form-container glass-card reveal-item">
+                        <form id="portfolio-contact-form" class="contact-form" autocomplete="off">
+                            <div class="form-group">
+                                <input type="text" id="form-name" required placeholder=" " class="form-input">
+                                <label for="form-name" class="form-label">Your Name</label>
+                                <span class="form-line"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="email" id="form-email" required placeholder=" " class="form-input">
+                                <label for="form-email" class="form-label">Email Address</label>
+                                <span class="form-line"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" id="form-subject" required placeholder=" " class="form-input">
+                                <label for="form-subject" class="form-label">Subject</label>
+                                <span class="form-line"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea id="form-message" required placeholder=" " class="form-input form-textarea"></textarea>
+                                <label for="form-message" class="form-label">Your Message</label>
+                                <span class="form-line"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                                <span class="btn-text"><i class="fa-solid fa-paper-plane"></i> Send Message</span>
+                                <span class="spinner hidden"></span>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 8. FOOTER -->
+    <footer id="footer" class="footer">
+        <div class="footer-container">
+            <a href="#hero" class="footer-logo">
+                Sriyan <span class="logo-accent">Fernando</span>
+            </a>
+            
+            <ul class="footer-links">
+                <li><a href="#about" class="footer-link">About</a></li>
+                <li><a href="#skills" class="footer-link">Skills</a></li>
+                <li><a href="#projects" class="footer-link">Projects</a></li>
+                <li><a href="#education" class="footer-link">Education</a></li>
+                <li><a href="#strengths" class="footer-link">Strengths</a></li>
+                <li><a href="#contact" class="footer-link">Contact</a></li>
+            </ul>
+
+            <div class="footer-divider"></div>
+            
+            <p class="copyright-text">
+                &copy; 2026 | Designed & Developed with <i class="fa-solid fa-heart footer-heart"></i> by <span class="copyright-name">Sriyan Fernando</span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE MODAL FOR PROJECT DETAILS -->
+    <div class="modal-overlay" id="project-modal">
+        <div class="modal-card glass-card">
+            <button class="modal-close" id="modal-close-btn" aria-label="Close modal">&times;</button>
+            <div class="modal-body" id="modal-project-content">
+                <!-- JavaScript will inject dynamic content based on project clicked -->
+            </div>
+        </div>
+    </div>
+
+    <!-- SUCCESS TOAST NOTIFICATION -->
+    <div class="toast" id="success-toast">
+        <div class="toast-icon"><i class="fa-solid fa-circle-check"></i></div>
+        <div class="toast-content">
+            <span class="toast-title">Success!</span>
+            <span class="toast-msg">Your message has been sent successfully.</span>
+        </div>
+    </div>
+
+    <!-- Custom Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
